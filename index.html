@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Font Icon CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  </head>
+  <body>
+    <article class="table__container">
+      <ul>
+        <li class="border-purple border-pink active">
+          <button>Preview</button>
+        </li>
+        <li class="border-green">
+          <button>Pass</button>
+        </li>
+        <li class="border-blue">
+          <button>Enterprise</button>
+        </li>
+      </ul>
+
+      <table>
+        <thead class="table-head">
+          <tr>
+            <th class="hide"></th>
+            <th class="table-head__light-pink default">Pass Preview</th>
+            <th class="table-head__light-green">Pass</th>
+            <th class="table-head__light-blue">Pass Enterprise</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-price">
+            <td class="table-price__blue">
+              Choose the Pass membership that works for you...
+            </td>
+            <td class="table-price__pink  default">
+              <h3>
+                <strong>3</strong> <br />
+                Months FREE Access
+              </h3>
+            </td>
+            <td class="table-price__green">
+              <h3>
+                <strong>$89</strong> <br />
+                <span>/ month or $995 USD/Year</span>
+              </h3>
+            </td>
+            <td class="table-price__primary">
+              <h3>
+                <strong>$169</strong> <br />
+                <span
+                  >/ month or $1995 USD/Year
+                  <i class="bi bi-info-circle-fill"></i
+                ></span>
+              </h3>
+            </td>
+          </tr>
+          <!-- This is fpr the black row  -->
+          <tr class="table-bundle">
+            <td class="table-bundle__black"></td>
+            <td class="table-bundle__black txt-sm  default">
+              <a href="https://neuroptimal.com/store/"
+                >Included with the purchase of any NeurOptimal® Bundle</a
+              >
+            </td>
+            <td class="table-bundle__black">
+              <a
+                href="https://neuroptimal.com/product/pass-monthly-subscription/"
+                >Join Now!</a
+              >
+            </td>
+            <td class="table-bundle__black">
+              <a
+                href="https://neuroptimal.com/product/pass-enterprise-monthly-subscription/"
+                >Join Now!</a
+              >
+            </td>
+          </tr>
+          <tr class="bg-blue txt-md">
+            <td class="txt-md">
+              NUMBER OF SYSTEMS COVERED UNDER THE MEMBERSHIP
+            </td>
+            <td class=" default">1</td>
+            <td>1</td>
+            <td class="">Up To 5 Systems</td>
+          </tr>
+          <!-- Content List with checks marks and X's -->
+          
+          <!-- TECHNICAL MAINTENANCE BENEFITS Section -->
+          <tr>
+            <tr>
+              <td class="col-span bg-light-blue txt-md bold">TECHNICAL MAINTENANCE BENEFITS</td>
+            </tr>
+            <td class="content-list">
+              <h6 class="txt-md pad-bottom">UNLIMITED TECHNICAL SUPPORT VIA ZENCONNECT & PHONE</h6>
+              <p class="txt-lg pad-bottom">Learn more about this benefit: 
+                  <a href="#" class="icons"><i class="bi bi-info-circle-fill"></i></a>
+              </p>
+              <p class="txt-lg pad-bottom">Learn more via video:
+                  <a href="#" class="icons"><i class="bi bi-camera-video-fill"></i></a>
+              </p>
+              <p class="txt-lg pad-bottom">What clients are saying:
+                  <a href="#" class="icons"><i class="fa fa-quote-left"></i></a>
+              </p>
+            <td class="default td-pink"><span class="tick">&#10004;</span></td>
+            <td class="td-green"><span class="tick">&#10004;</span></td>
+            <td class="td-blue"><span class="tick">&#10004;</span></td>
+          </tr>
+        
+          <tr>
+            <td class="content-list">
+              <h6 class="txt-md pad-bottom">NEUROPTIMAL® 3 PASS SUPPORT</h6>
+              <p class="txt-lg pad-bottom">Learn more about this benefit: 
+                  <a href="#" class="icons"><i class="bi bi-info-circle-fill"></i></a>
+              </p>
+              <p class="txt-lg pad-bottom">What clients are saying:
+                  <a href="#" class="icons"><i class="fa fa-quote-left"></i></a>
+              </p>
+            <td class="default td-pink"><span class="tick">&#10004;</span></td>
+            <td class="td-green"><span class="tick">&#10004;</span></td>
+            <td class=" td-blue"><span class="tick">&#10004;</span></td>
+          </tr>
+
+          <tr>
+            <td class="content-list">
+              <h6 class="txt-md pad-bottom">SYSTEM(S) MAINTENANCE</h6>
+              <p class="txt-lg pad-bottom">Learn more about this benefit: 
+                <a href="#" class="icons"><i class="bi bi-info-circle-fill"></i></a>
+              </p>
+              <p class="txt-lg pad-bottom">Learn more via video:
+                <a href="#" class="icons"><i class="bi bi-camera-video-fill"></i></a>
+              </p>
+            <td class="default td-pink"><span class="tick">&#10004;</span></td>
+            <td class="td-green"><span class="tick">&#10004;</span></td>
+            <td class="td-blue"><span class="tick">&#10004;</span></td>
+          </tr>
+         
+          <tr>
+            <td class="content-list">
+              <h6 class="txt-md pad-bottom">SESSION AND RENTAL LICENSE MANAGEMENT</h6>
+              <p class="txt-lg pad-bottom">Learn more about this benefit: 
+                <a href="#" class="icons"><i class="bi bi-info-circle-fill"></i></a>
+              </p>
+            <td class="default td-pink"><span class="tick">&#10004;</span></td>
+            <td class="td-green"><span class="tick">&#10004;</span></td>
+            <td class="td-blue"><span class="tick">&#10004;</span></td>
+          </tr>
+
+          <tr>   
+            <td class="content-list">
+              <h6 class="txt-md pad-bottom">LOANER PROGRAM - SYSTEM(S) AND ZAMP(S)</h6>
+              <p class="txt-lg pad-bottom">No cost for shipping<span class="tick">&#10004; &#10004;</span></p>
+              <p class="txt-lg pad-bottom">Learn more about this benefit: 
+                <a href="#" class="icons"><i class="bi bi-info-circle-fill"></i></a>
+              </p>
+              <p class="txt-lg pad-bottom">Learn more via video:
+                <a href="#" class="icons"><i class="bi bi-camera-video-fill"></i></a>
+              </p>
+              <p class="txt-lg pad-bottom">What clients are saying:
+                <a href="#" class="icons"><i class="fa fa-quote-left"></i></a>
+              </p>
+            <td class="default td-pink"><span class="tick">&#10004;</span></td>
+            <td class="td-green"><span class="tick">&#10004;</span></td>
+            <td class="td-blue"><span class="tick">&#10004; &#10004;</span></td>
+          </tr>
+
+             <tr>
+            <td class="content-list">
+              <h6 class="txt-md pad-bottom">ZAMP WARRANTY PROGRAM</h6>
+              <p class="txt-lg pad-bottom">$100 USD deductible</p>
+              <p class="txt-lg pad-bottom">One way shipping</p>
+              <p class="txt-lg pad-bottom">Learn more about this benefit: 
+                <a href="#" class="icons"><i class="bi bi-info-circle-fill"></i></a>
+              </p>
+              <p class="txt-lg pad-bottom terms">*Please refer to our <a href="https://neuroptimal.com/terms-and-conditions/#warranty">Terms & Conditions</a> regarding License Transfers</p>
+            <td class="default  td-pink"><span class="tick">&#10004;</span></td>
+            <td class="td-green"><span class="tick">&#10004;</span></td>
+            <td class="td-blue"><span class="tick">&#10004;</span></td>
+          </tr>
+          <!-- END TECHNICAL MAINTENANCE BENEFITS Section -->
+          
+          <!-- SOFTWARE BENEFITS SECTION -->
+           <tr>
+            <tr>
+              <td class="col-span bg-light-blue txt-md bold">SOFTWARE BENEFITS</td>
+            </tr>
+            <td class="content-list">
+              <h6 class="txt-md pad-bottom">NEUROPTIMAL® UPGRADES</h6>
+              <p class="txt-lg pad-bottom">With priority<span class="tick">&#10004; &#10004;</span></p>
+              <p class="txt-lg pad-bottom">Learn more about this benefit: 
+                  <a href="#" class="icons"><i class="bi bi-info-circle-fill"></i></a>
+              </p>
+              <p class="txt-lg pad-bottom">What clients are saying:
+                  <a href="#" class="icons"><i class="fa fa-quote-left"></i></a>
+              </p>
+            </td>
+            <td class="default td-pink"><span class="tick">&#10004;</span></td>
+            <td class="td-green"><span class="tick">&#10004; &#10004;</span></td>
+            <td class=" td-blue"><span class="tick">&#10004; &#10004;</span></td>
+          </tr>
+
+           <tr>
+            <td class="content-list">
+              <h6 class="txt-md pad-bottom">FREE ESET ANTIVIRUS SECURITY RENEWAL</h6>
+              <p class="txt-lg pad-bottom">With priority<span class="tick">&#10004; &#10004;</span></p>
+              <p class="txt-lg pad-bottom">Learn more about this benefit: 
+                  <a href="#" class="icons"><i class="bi bi-info-circle-fill"></i></a>
+              </p>
+            </td>
+            <td class="default td-pink"><span class="tick-X">X</span></td>
+            <td class="td-green"><span class="tick">&#10004;</span></td>
+            <td class="td-blue"><span class="tick">&#10004;</span></td>
+          </tr>
+
+          <!--END SOFTWARE BENEFITS SECTION -->
+
+           <!-- EDUCATIONAL BENEFITS SECTION -->
+           <tr>
+            <tr>
+              <td class="col-span bg-light-blue txt-md bold">EDUCATIONAL BENEFITS</td>
+            </tr>
+            <td class="content-list">
+              <h6 class="txt-md pad-bottom">ACCESS TO WEBINARS, DOCUMENTS, VIDEOS AND EXCLUSIVE CONTENT</h6>
+              <p class="txt-lg pad-bottom">Learn more about this benefit: 
+                  <a href="#" class="icons"><i class="bi bi-info-circle-fill"></i></a>
+              </p>
+            </td>
+            <td class="default td-pink"><span class="tick">&#10004;</span></td>
+            <td class="td-green"><span class="tick">&#10004;</span></td>
+            <td class="td-blue"><span class="tick">&#10004;</span></td>
+          </tr>
+
+           <tr>
+            <td class="content-list">
+              <h6 class="txt-md pad-bottom">RECERTIFICATION COURSE</h6>
+              <p class="txt-lg pad-bottom">Learn more about this benefit: 
+                <a href="#" class="icons"><i class="bi bi-info-circle-fill"></i></a>
+              </p>
+              <p class="txt-lg pad-bottom">Learn more via video:
+                <a href="#" class="icons"><i class="bi bi-camera-video-fill"></i></a>
+              </p>
+            </td>
+            <td class="default td-pink"><span class="tick-X">X</span></td>
+            <td class="td-green"><span class="tick">&#10004;</span></td>
+            <td class="td-blue"><span class="tick">&#10004;</span></td>
+          </tr>
+
+          <!--END EDUCATIONAL BENEFITS SECTION -->
+
+              <!-- BUSINESS ESSENTIALS SECTION -->
+           <tr>
+            <tr>
+              <td class="col-span bg-light-blue txt-md bold">BUSINESS ESSENTIALS</td>
+            </tr>
+            <td class="content-list">
+              <h6 class="txt-md pad-bottom">FIND A TRAINER PAGE LISTING WITH TRAINER VIDEO FEATURE</h6>
+              <p class="txt-md pad-bottom">*Requires Basic Certification</p>
+              <p class="txt-lg pad-bottom">Learn more about this benefit: 
+                <a href="#" class="icons"><i class="bi bi-info-circle-fill"></i></a>
+              </p>
+              <p class="txt-lg pad-bottom">Learn more via video:
+                <a href="#" class="icons"><i class="bi bi-camera-video-fill"></i></a>
+              </p>
+            </td>
+            <td class="default td-pink"><span class="tick">&#10004;</span></td>
+            <td class="td-green"><span class="tick">&#10004;</span></td>
+            <td class="td-blue"><span class="tick">&#10004;</span></td>
+          </tr>
+
+           <tr>
+            <td class="content-list">
+              <h6 class="txt-md pad-bottom">PASS MEMBER REFERRAL PROGRAM</h6>
+              <p class="txt-lg pad-bottom">Earn up to $1000 USD on any Unlimited licensed bundle and $250 USD on any Limited licensed bundle!<span class="tick">&#10004;</span></p>
+              <p class="txt-lg pad-bottom">Learn more about this benefit: 
+                <a href="#" class="icons"><i class="bi bi-info-circle-fill"></i></a>
+              </p>
+              <p class="txt-lg pad-bottom">What clients are saying:
+                <a href="#" class="icons"><i class="fa fa-quote-left"></i></a>
+              </p>
+            </td>
+            <td class="default td-pink"><span class="tick-X">X</span></td>
+            <td class="td-green"><span class="tick">&#10004;</span></td>
+            <td class="td-blue"><span class="tick">&#10004;</span></td>
+          </tr>
+
+          <tr>
+            <td class="content-list">
+              <h6 class="txt-md pad-bottom">10% DISCOUNT ON MOST PRODUCTS AND CONSUMABLES</h6>
+              <p class="txt-md pad-bottom">*Excludes Upgrades & Memberships</p>
+              <p class="txt-lg pad-bottom">Learn more about this benefit: 
+                <a href="#" class="icons"><i class="bi bi-info-circle-fill"></i></a>
+              </p>
+            </td>
+            <td class="default td-pink"><span class="tick-X">X</span></td>
+            <td class="td-green"><span class="tick">&#10004;</span></td>
+            <td class="td-blue"><span class="tick">&#10004;</span></td>
+          </tr>
+
+          <tr>
+            <td class="content-list">
+              <h6 class="txt-md pad-bottom">20% SESSION DISCOUNT</h6>
+              <!-- Dont know if he wants this on both -->
+              <!-- <p class="txt-md pad-bottom">*Excludes Upgrades & Memberships</p> -->
+              <p class="txt-lg pad-bottom">Learn more about this benefit: 
+                <a href="#" class="icons"><i class="bi bi-info-circle-fill"></i></a>
+              </p>
+            </td>
+            <td class="default td-pink"><span class="tick-X">X</span></td>
+            <td class="td-green"><span class="tick">&#10004;</span></td>
+            <td class="td-blue"><span class="tick">&#10004;</span></td>
+          </tr>
+
+          <tr>
+            <td class="content-list">
+              <h6 class="txt-md pad-bottom">DISCOUNT ON SYSTEMS</h6>
+              <div class="flex">
+                <p class="txt-lg pad-bottom"><strong>Limited</strong>&nbsp;Licensed bundles</p>
+                <span class="tick">&#10004;</span>  
+              </div>
+              <p class="txt-lg pad-bottom">No cost for shipping<span class="tick">&#10004; &#10004;</span></p>
+              <p class="txt-lg pad-bottom">Learn more about this benefit: 
+                <a href="#" class="icons"><i class="bi bi-info-circle-fill"></i></a>
+              </p>
+            </td>
+            <td class="default td-pink"><span class="tick-X">X</span></td>
+            <td class="td-green"><span class="tick">&#10004;</span></td>
+            <td class="td-blue"><span class="tick">&#10004; &#10004;</span></td>
+          </tr>
+
+          <tr>
+            <td class="content-list">
+              <h6 class="txt-md pad-bottom">ADVANTAGEOUS FINANCING TERMS & SPECIAL PROMOTIONS</h6>
+              
+              <p class="txt-lg pad-bottom">Learn more about this benefit: 
+                <a href="#" class="icons"><i class="bi bi-info-circle-fill"></i></a>
+              </p>
+            </td>
+            <td class="default td-pink"><span class="tick-X">X</span></td>
+            <td class="td-green"><span class="tick">&#10004;</span></td>
+            <td class="td-blue"><span class="tick">&#10004; &#10004;</span></td>
+          </tr>
+          
+     
+          <tr>
+            <td class="content-list">
+              <h6 class="txt-md pad-bottom">DEDICATED ACCOUNT MANAGER</h6>
+              
+              <p class="txt-lg pad-bottom">Learn more about this benefit: 
+                <a href="#" class="icons"><i class="bi bi-info-circle-fill"></i></a>
+              </p>
+            </td>
+            <td class="default td-pink"><span class="tick-X">X</span></td>
+            <td class="td-green"><span class="tick-X">X</span></td>
+            <td class="td-blue"><span class="tick">&#10004;</span></td>
+          </tr>
+     
+          <tr>
+            <td class="content-list">
+              <h6 class="txt-md pad-bottom">PASS COVERAGE PER ADDITIONAL SYSTEM</h6>
+              <p class="txt-lg pad-bottom">$44.50 USD/per system<span class="tick">&#10004; </span></p>
+              <p class="txt-lg pad-bottom">$33.80 USD/per system<span class="tick">&#10004; &#10004;</span></p>
+              <p class="txt-lg pad-bottom">Learn more about this benefit: 
+                <a href="#" class="icons"><i class="bi bi-info-circle-fill"></i></a>
+              </p>
+            </td>
+            <td class="default td-pink"><span class="tick-X">X</span></td>
+            <td class="td-green"><span class="tick">&#10004;</span></td>
+            <td class="td-blue"><span class="tick">&#10004; &#10004;</span></td>
+          </tr>
+
+          <!--END BUSINESS ESSENTIALS SECTION -->
+        
+          <!-- End Content List with checks marks and X's -->
+          <!-- Links to Store Items -->
+          <tr>
+            <td class="content-list hidden"></td>
+            <td class="default pass-btn pass-btn__pink"><a class="width-full" href="https://neuroptimal.com/store">CHOOSE YOUR SYSTEM</a></td>
+            <td class="pass-btn pass-btn__green"><a class="width-full" href="https://neuroptimal.com/product/pass-monthly-subscription/">JOIN NOW!</a></td>
+            <td class="pass-btn pass-btn__blue"><a class="width-full" href="https://neuroptimal.com/product/pass-enterprise-monthly-subscription/">JOIN NOW!</a></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </article>
+    <script src="script.js"></script>
+  </body>
+</html>

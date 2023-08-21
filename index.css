@@ -1,0 +1,309 @@
+/* 
+- make mobile switch sticky
+*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.table__container {
+  width: 100%;
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.txt-lg {
+  font-size: 0.9rem;
+}
+
+.txt-md {
+  font-size: 0.8rem;
+}
+
+.txt-sm {
+  font-size: 0.7rem;
+}
+
+.txt-top {
+  position: relative;
+  top: -9px;
+  left: -2px;
+}
+
+.tick {
+  font-size: 1rem;
+  color: #2ca01c;
+}
+
+.tick-X {
+  font-size: 1rem;
+  color: #f20303;
+  font-weight: 900;
+}
+
+.hide {
+  border: 0;
+  background: none;
+}
+
+.bg-blue {
+  background: #003057;
+  color: white;
+}
+
+.bg-light-blue {
+  background: #5d85a0;
+  color: white;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.pad-bottom {
+  padding-bottom: 8px;
+}
+
+ul {
+  display: flex;
+  top: 0px;
+  z-index: 10;
+  padding-bottom: 14px;
+}
+
+li {
+  list-style: none;
+  flex: 1;
+}
+
+li:last-child {
+  border-right: 1px solid #ddd;
+}
+
+button {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-right: 0;
+  border-top: 0;
+  padding: 10px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  height: 60px;
+  color: #999;
+}
+
+li.active button {
+  background: #f5f5f5;
+  color: #000;
+}
+
+.border-pink {
+  border-top: 3px solid #e8927c;
+}
+
+.border-green {
+  border-top: 3px solid #cabb8a;
+}
+
+.border-blue {
+  border-top: 3px solid #427091;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.table-head {
+  color: white;
+}
+.table-head__light-pink {
+  background: #f0b5a6;
+  font-weight: 300;
+}
+.table-head__light-green {
+  background: #dbd0ae;
+  font-weight: 300;
+}
+.table-head__light-blue {
+  background: #5d85a0;
+  font-weight: 300;
+}
+
+.table-price {
+  color: white;
+}
+.table-price h3 {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.table-price h3 span,
+.table-price h3 p {
+  font-size: 0.9rem;
+}
+.table-price__blue {
+  background: #003057;
+  padding: 0 3rem;
+}
+.table-price__pink {
+  background: #e8927c;
+}
+.table-price__green {
+  background: #cabb8a;
+}
+.table-price__primary {
+  background: #427091;
+}
+
+.table-bundle {
+  color: white;
+}
+.table-bundle__black {
+  background: #0b0b0b;
+  padding: 0 1px;
+}
+.table-bundle__black a {
+  color: white;
+}
+
+.content-list {
+  background: #eff8ff;
+}
+.content-list p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-list p a {
+  font-size: 1rem;
+  color: #427091;
+}
+.content-list .terms {
+  display: block;
+}
+.content-list .terms a {
+  text-decoration: underline;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.content-list .flex {
+  display: flex;
+  justify-content: space-between;
+}
+.content-list .flex span {
+  padding-bottom: 8px;
+}
+
+.td-pink {
+  background: #efe9eb;
+}
+
+.td-green {
+  background: #e5e6dc;
+}
+
+.td-blue {
+  background: #e1eef8;
+}
+
+.pass-btn {
+  border: 2px solid white;
+}
+.pass-btn__pink {
+  background: #e8927c;
+}
+.pass-btn__pink:hover {
+  background: white;
+  border: 2px solid #e8927c;
+}
+.pass-btn__pink:hover .width-full {
+  color: black;
+}
+.pass-btn__green {
+  background: #cabb8a;
+}
+.pass-btn__green:hover {
+  background: white;
+  border: 2px solid #cabb8a;
+}
+.pass-btn__green:hover .width-full {
+  color: black;
+}
+.pass-btn__blue {
+  background: #427091;
+}
+.pass-btn__blue:hover {
+  background: white;
+  border: 2px solid #427091;
+}
+.pass-btn__blue:hover .width-full {
+  color: black;
+}
+.pass-btn .width-full {
+  color: white;
+  font-weight: 700;
+}
+
+th {
+  background: #f5f5f5;
+  display: none;
+}
+
+td,
+th {
+  height: 53px;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  empty-cells: show;
+}
+
+td,
+th {
+  text-align: left;
+}
+
+td + td,
+th + th {
+  text-align: center;
+  display: none;
+}
+
+td.default {
+  display: table-cell;
+}
+
+@media (min-width: 670px) {
+  ul {
+    display: none;
+  }
+  td,
+  th {
+    display: table-cell !important;
+  }
+  td,
+  th {
+    width: 330px;
+  }
+  td + td,
+  th + th {
+    width: auto;
+  }
+}/*# sourceMappingURL=index.css.map */

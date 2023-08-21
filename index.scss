@@ -1,0 +1,337 @@
+/* 
+- make mobile switch sticky
+*/
+
+// variables
+$darkBlue: #003057;
+$primary-blue: #427091;
+$light-blue: #5d85a0;
+$light-pink: #f0b5a6;
+$color-pink: #e8927c;
+$light-green: #dbd0ae;
+$color-green: #cabb8a;
+$color-black: #0b0b0b;
+$color-red: #f20303;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.table__container {
+  width: 100%;
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+// universal classes
+
+.txt-lg {
+  font-size: 0.9rem;
+}
+
+.txt-md {
+  font-size: 0.8rem;
+}
+
+.txt-sm {
+  font-size: 0.7rem;
+}
+
+.txt-top {
+  position: relative;
+  top: -9px;
+  left: -2px;
+}
+.tick {
+  font-size: 1rem;
+  color: #2ca01c;
+}
+
+.tick-X {
+  font-size: 1rem;
+  color: $color-red;
+  font-weight: 900;
+}
+
+.hide {
+  border: 0;
+  background: none;
+}
+
+.bg-blue {
+  background: $darkBlue;
+  color: white;
+}
+
+.bg-light-blue {
+  background: $light-blue;
+  color: white;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.pad-bottom {
+  padding-bottom: 8px;
+}
+
+// mobile buttons to click between tabs
+ul {
+  display: flex;
+  top: 0px;
+  z-index: 10;
+  padding-bottom: 14px;
+}
+li {
+  list-style: none;
+  flex: 1;
+}
+li:last-child {
+  border-right: 1px solid #ddd;
+}
+
+button {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-right: 0;
+  border-top: 0;
+  padding: 10px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  height: 60px;
+  color: #999;
+}
+li.active button {
+  background: #f5f5f5;
+  color: #000;
+}
+//color for buttons on mobile
+.border-pink {
+  border-top: 3px solid $color-pink;
+}
+
+.border-green {
+  border-top: 3px solid $color-green;
+}
+
+.border-blue {
+  border-top: 3px solid $primary-blue;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+// table header section
+.table-head {
+  color: white;
+  &__light-pink {
+    background: $light-pink;
+    font-weight: 300;
+  }
+
+  &__light-green {
+    background: $light-green;
+    font-weight: 300;
+  }
+
+  &__light-blue {
+    background: $light-blue;
+    font-weight: 300;
+  }
+}
+// for price section
+.table-price {
+  color: white;
+
+  h3 {
+    font-weight: 300;
+    font-size: 1.2rem;
+
+    span,
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  &__blue {
+    background: $darkBlue;
+    padding: 0 3rem;
+  }
+
+  &__pink {
+    background: $color-pink;
+  }
+  &__green {
+    background: $color-green;
+  }
+  &__primary {
+    background: $primary-blue;
+  }
+}
+
+// links to page store for specific pass
+.table-bundle {
+  color: white;
+  &__black {
+    background: $color-black;
+    padding: 0 1px;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+// this is for table content left section
+.content-list {
+  background: #eff8ff;
+  p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      font-size: 1rem;
+      color: $primary-blue;
+    }
+  }
+
+  .terms {
+    display: block;
+
+    a {
+      text-decoration: underline;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      padding-bottom: 8px;
+    }
+  }
+}
+
+// colors for each pass checks or X's
+.td-pink {
+  background: #efe9eb;
+}
+
+.td-green {
+  background: #e5e6dc;
+}
+
+.td-blue {
+  background: #e1eef8;
+}
+
+// store buttons on bottom
+
+.pass-btn {
+  border: 2px solid white;
+
+  &__pink {
+    background: $color-pink;
+
+    &:hover {
+      background: white;
+      border: 2px solid $color-pink;
+      .width-full {
+        color: black;
+      }
+    }
+  }
+
+  &__green {
+    background: $color-green;
+    &:hover {
+      background: white;
+      border: 2px solid $color-green;
+      .width-full {
+        color: black;
+      }
+    }
+  }
+
+  &__blue {
+    background: $primary-blue;
+    &:hover {
+      background: white;
+      border: 2px solid $primary-blue;
+      .width-full {
+        color: black;
+      }
+    }
+  }
+
+  .width-full {
+    color: white;
+    font-weight: 700;
+  }
+}
+
+// Table content styling
+th {
+  background: #f5f5f5;
+  display: none;
+}
+td,
+th {
+  height: 53px;
+}
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  empty-cells: show;
+}
+td,
+th {
+  text-align: left;
+}
+td + td,
+th + th {
+  text-align: center;
+  display: none;
+}
+td.default {
+  display: table-cell;
+}
+
+@media (min-width: 670px) {
+  ul {
+    display: none;
+  }
+  td,
+  th {
+    display: table-cell !important;
+  }
+  td,
+  th {
+    width: 330px;
+  }
+  td + td,
+  th + th {
+    width: auto;
+  }
+}
