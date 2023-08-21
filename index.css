@@ -10,7 +10,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 a {
@@ -19,9 +19,21 @@ a {
 
 .table__container {
   width: 100%;
-  padding: 3rem 2rem;
+  padding: 2rem 0;
   margin: 0 auto;
   position: relative;
+}
+
+.choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  background: #003057;
+  color: white;
+  padding: 1rem;
 }
 
 .txt-lg {
@@ -29,7 +41,7 @@ a {
 }
 
 .txt-md {
-  font-size: 0.8rem;
+  font-size: 0.83rem;
 }
 
 .txt-sm {
@@ -51,11 +63,6 @@ a {
   font-size: 1rem;
   color: #f20303;
   font-weight: 900;
-}
-
-.hide {
-  border: 0;
-  background: none;
 }
 
 .bg-blue {
@@ -102,24 +109,24 @@ button {
   font-size: 14px;
   font-weight: bold;
   height: 60px;
-  color: #999;
+  color: #0b0b0b;
 }
 
 li.active button {
-  background: #f5f5f5;
-  color: #000;
+  background: #0b0b0b;
+  color: white;
 }
 
 .border-pink {
-  border-top: 3px solid #e8927c;
+  border-top: 5px solid #e8927c;
 }
 
 .border-green {
-  border-top: 3px solid #cabb8a;
+  border-top: 5px solid #cabb8a;
 }
 
 .border-blue {
-  border-top: 3px solid #427091;
+  border-top: 5px solid #427091;
 }
 
 table {
@@ -155,10 +162,6 @@ table {
 .table-price h3 p {
   font-size: 0.9rem;
 }
-.table-price__blue {
-  background: #003057;
-  padding: 0 3rem;
-}
 .table-price__pink {
   background: #e8927c;
 }
@@ -187,6 +190,7 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 .content-list p a {
   font-size: 1rem;
@@ -202,7 +206,6 @@ table {
 }
 .content-list .flex {
   display: flex;
-  justify-content: space-between;
 }
 .content-list .flex span {
   padding-bottom: 8px;
@@ -220,9 +223,6 @@ table {
   background: #e1eef8;
 }
 
-.pass-btn {
-  border: 2px solid white;
-}
 .pass-btn__pink {
   background: #e8927c;
 }
@@ -270,7 +270,7 @@ th {
 
 td,
 th {
-  border: 1px solid #ddd;
+  border: 1px solid #c2c0c0;
   padding: 10px;
   empty-cells: show;
 }
@@ -290,7 +290,19 @@ td.default {
   display: table-cell;
 }
 
+.hide {
+  border: 0;
+  background: none;
+}
+
 @media (min-width: 670px) {
+  .table__container {
+    padding: 0 2rem;
+  }
+  .table-price__blue {
+    padding: 0 2rem;
+    font-size: 1rem;
+  }
   ul {
     display: none;
   }
@@ -305,5 +317,11 @@ td.default {
   td + td,
   th + th {
     width: auto;
+  }
+  .choose {
+    display: none;
+  }
+  .show {
+    background: #003057;
   }
 }/*# sourceMappingURL=index.css.map */
