@@ -10,7 +10,6 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  padding: 2rem;
 }
 
 a {
@@ -19,7 +18,7 @@ a {
 
 .table__container {
   width: 100%;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   margin: 0 auto;
   position: relative;
 }
@@ -297,7 +296,7 @@ td.default {
 
 @media (min-width: 670px) {
   .table__container {
-    padding: 0 2rem;
+    padding: 4rem 4rem;
   }
   .table-price__blue {
     padding: 0 2rem;

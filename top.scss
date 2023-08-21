@@ -1,0 +1,73 @@
+// variables
+$darkBlue: #003057;
+$primary-blue: #427091;
+$light-blue: #5d85a0;
+$light-pink: #f0b5a6;
+$color-pink: #e8927c;
+$light-green: #dbd0ae;
+$color-green: #cabb8a;
+$color-black: #0b0b0b;
+$color-red: #f20303;
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 0.7rem 3rem;
+}
+
+.logo {
+  width: 30%;
+  height: 70px;
+  padding-left: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .logo {
+    width: 60%;
+    height: 40px;
+    padding-left: 0;
+  }
+}
+
+footer {
+  background-color: $primary-blue;
+  height: 300px;
+}
+
+/* This is just the title page of this page */
+header {
+  min-height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgb(93, 133, 160);
+  background: linear-gradient(
+    180deg,
+    rgba(93, 133, 160, 1) 0%,
+    rgba(93, 133, 160, 1) 35%,
+    rgba(163, 187, 202, 1) 100%
+  );
+
+  > h1 {
+    font-weight: 300;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+  }
+}
+
+/* wordpress page section for price comparision */
+// .page-content {
+//   padding: 1rem 90px;
+//   margin: 3rem 0;
+// }
+// @media only screen and (max-width: 768px) {
+//   .page-content {
+//     padding: 1rem 25px;
+//   }
+// }

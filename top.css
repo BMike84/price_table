@@ -1,0 +1,45 @@
+nav {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 0.7rem 3rem;
+}
+
+.logo {
+  width: 30%;
+  height: 70px;
+  padding-left: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 0.5rem 0.75rem;
+  }
+  .logo {
+    width: 60%;
+    height: 40px;
+    padding-left: 0;
+  }
+}
+footer {
+  background-color: #427091;
+  height: 300px;
+}
+
+/* This is just the title page of this page */
+header {
+  min-height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgb(93, 133, 160);
+  background: linear-gradient(180deg, rgb(93, 133, 160) 0%, rgb(93, 133, 160) 35%, rgb(163, 187, 202) 100%);
+}
+header > h1 {
+  font-weight: 300;
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+}
+
+/* wordpress page section for price comparision *//*# sourceMappingURL=top.css.map */
