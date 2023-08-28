@@ -235,6 +235,9 @@ table {
   background: #e1eef8;
 }
 
+.pass-btn {
+  font-size: 0.7rem;
+}
 .pass-btn__pink {
   background: #e8927c;
 }
@@ -335,5 +338,10 @@ td.default {
   }
   .show {
     background: #003057;
+  }
+}
+@media (min-width: 821px) {
+  .pass-btn {
+    font-size: 0.9rem;
   }
 }/*# sourceMappingURL=index.css.map */

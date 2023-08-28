@@ -262,6 +262,7 @@ table {
 // store buttons on bottom
 
 .pass-btn {
+  font-size: 0.7rem;
   &__pink {
     background: $color-pink;
 
@@ -367,5 +368,11 @@ td.default {
 
   .show {
     background: $darkBlue;
+  }
+}
+
+@media (min-width: 821px) {
+  .pass-btn {
+    font-size: 0.9rem;
   }
 }
