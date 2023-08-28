@@ -355,7 +355,7 @@ td.default {
   }
   td,
   th {
-    width: 330px;
+    width: 280px;
   }
   td + td,
   th + th {
@@ -368,6 +368,13 @@ td.default {
 
   .show {
     background: $darkBlue;
+  }
+}
+
+@media (min-width: 768px) {
+  td,
+  th {
+    width: 330px;
   }
 }
 
