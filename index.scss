@@ -104,6 +104,7 @@ ul {
 li {
   list-style: none;
   flex: 1;
+  text-transform: uppercase;
 }
 li:last-child {
   border-right: 1px solid #ddd;
@@ -117,12 +118,12 @@ button {
   padding: 10px;
   background: #fff;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 900;
   height: 60px;
   color: $color-black;
+  text-transform: uppercase;
 }
 li.active button {
-  background: $color-black;
   color: white;
 }
 //color for buttons on mobile
@@ -136,6 +137,18 @@ li.active button {
 
 .border-blue {
   border-top: 5px solid $primary-blue;
+}
+// to make active tab background change
+.tab-pink {
+  background: $color-pink;
+}
+
+.tab-green {
+  background: $color-green;
+}
+
+.tab-blue {
+  background: $darkBlue;
 }
 
 table {

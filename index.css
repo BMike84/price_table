@@ -92,6 +92,7 @@ ul {
 li {
   list-style: none;
   flex: 1;
+  text-transform: uppercase;
 }
 
 li:last-child {
@@ -106,13 +107,13 @@ button {
   padding: 10px;
   background: #fff;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 900;
   height: 60px;
   color: #0b0b0b;
+  text-transform: uppercase;
 }
 
 li.active button {
-  background: #0b0b0b;
   color: white;
 }
 
@@ -126,6 +127,18 @@ li.active button {
 
 .border-blue {
   border-top: 5px solid #427091;
+}
+
+.tab-pink {
+  background: #e8927c;
+}
+
+.tab-green {
+  background: #cabb8a;
+}
+
+.tab-blue {
+  background: #003057;
 }
 
 table {

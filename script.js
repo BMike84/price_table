@@ -5,6 +5,22 @@ $("ul").on("click", "li", function () {
   $("tr").find("th:not(:eq(0))").hide();
   $("li").removeClass("active");
   $(this).addClass("active");
+  // btn backgorund
+  if ($(".pink").hasClass("active")) {
+    $(".btn-pink").addClass("tab-pink");
+  } else {
+    $(".btn-pink").removeClass("tab-pink");
+  }
+  if ($(".green").hasClass("active")) {
+    $(".btn-green").addClass("tab-green");
+  } else {
+    $(".btn-green").removeClass("tab-green");
+  }
+  if ($(".blue").hasClass("active")) {
+    $(".btn-blue").addClass("tab-blue");
+  } else {
+    $(".btn-blue").removeClass("tab-blue");
+  }
 });
 
 // Initialize the media query
